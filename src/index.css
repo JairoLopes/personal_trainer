@@ -1,1 +1,156 @@
+/* ESCREVER AS CUSTOMIZAÇÕES DE TALLES */
+
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: #000000; /* Cor durante a transição */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@theme {
+  --color-mainTheme: #1e90ff;
+  --color-secondaryTheme: #ffcc00;
+  --color-myWhite: #e2e6e9;
+  --color-deepBlue: #0d0c0c;
+  --color-navBlack: #000;
+
+  /* BREAKPOINTS */
+  --breakpoint-smallHome: 639px;
+  --breakpoint-mobNav: 875px;
+  --breakpoint-mobRes: 475px;
+  --breakpoint-mobTF: 425px;
+  --breakpoint-mobFD: 250px;
+  --breakpoint-mobFD2: 351px;
+
+  /* ANIMAÇÕES */
+  /* Animação de carregamento */
+  --animate-loading: loading 0.8s ease-in-out infinite;
+  @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(250%);
+    }
+  }
+
+  /* Efeito de cursor piscando */
+  --animate-blink: blink 0.8s step-end infinite;
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* Animação de giro suave */
+  --animate-calmSpin: calm-spin 1.5s ease-in-out infinite;
+  @keyframes calm-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    80% {
+      transform: rotate(360deg); /* Giro rápido */
+    }
+    90% {
+      transform: rotate(360deg); /* Suavização no final */
+      animation-timing-function: ease-out;
+    }
+    100% {
+      transform: rotate(360deg); /* Pequena pausa antes do próximo giro */
+    }
+  }
+
+  /* Animação balanço */
+  --animate-balanco: balanco 1.5s ease-in-out infinite;
+  @keyframes balanco {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-sky-600 via-mainTheme to-blue-600 bg-clip-text text-transparent;
+}
+
+.gradient-text2 {
+  @apply bg-gradient-to-r from-myWhite/90 to-myWhite/95 bg-clip-text text-transparent;
+}
+
+.section-style {
+  @apply min-h-screen flex justify-center pt-[10%] pb-20;
+}
+
+.h2-style {
+  @apply text-3xl lg:text-4xl font-bold mb-8 text-center;
+}
+
+.home-bg {
+  /* bg-[linear-gradient(to_right,rgb(13,12,12,0.9),rgb(13,12,12,0.97)),url('/img/Img_About/gym.jpg')] bg-no-repeat bg-fixed bg-cover */
+}
+
+.plans-bg {
+  /* bg-[linear-gradient(to_right,rgb(13,12,12,0.97),rgb(13,12,12,0.9)),url('/img/img_Plans/plans_bg.jpg')] bg-no-repeat bg-fixed bg-cover */
+}
+
+strong {
+  @apply text-secondaryTheme italic;
+}
+
+.btn-hover {
+  /* Estilização padrão */
+  @apply bg-mainTheme text-white py-3 px-6 font-medium transition relative 
+         overflow-hidden rounded-sm border border-mainTheme shadow-lg;
+
+  /* Estilização do before (efeito de fundo animado) */
+  @apply before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center 
+         before:-translate-x-20 before:rotate-45 before:bg-deepBlue before:duration-1000;
+
+  /* Estilização do hover */
+  @apply hover:text-white hover:shadow-mainTheme hover:shadow-lg hover:before:h-64 
+         hover:before:-translate-y-32 transition-shadow duration-1000;
+
+  /* Estilização do active */
+  @apply active:scale-95;
+}
+
+.btn-hover2 {
+  /* Estilização padrão */
+  @apply bg-deepBlue text-white py-3 px-6 font-medium transition relative 
+         overflow-hidden rounded-sm border border-mainTheme shadow-lg;
+
+  /* Estilização do before (efeito de fundo animado) */
+  @apply before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:-translate-x-20 before:rotate-45 before:bg-mainTheme before:duration-1000;
+
+  /* Estilização do hover */
+  @apply shadow-mainTheme hover:shadow-none transition-shadow duration-1000 hover:before:h-64 hover:before:-translate-y-32;
+
+  /* Estilização do active */
+  @apply active:scale-95;
+}
+
+.btn-submit {
+  /* Estilização padrão */
+  @apply bg-deepBlue text-white py-3 px-6 font-medium transition relative overflow-hidden rounded-sm border border-mainTheme shadow-lg;
+
+  /* Estilização do before (efeito de fundo animado) */
+  @apply transition-all duration-600;
+
+  @apply shadow-mainTheme hover:shadow-secondaryTheme hover:border-secondaryTheme hover:-translate-y-1;
+}
