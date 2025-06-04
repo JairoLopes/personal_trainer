@@ -72,7 +72,7 @@ const Planos = () => {
             transition={{ duration: 0.8 }}
             className="gradient-text font-bold text-2xl lg:text-3xl animate-pulse"
           >
-            Promoção de verão
+            Promoção mês dos namorados
           </motion.h3>
 
           <motion.h4
@@ -81,7 +81,7 @@ const Planos = () => {
             transition={{ duration: 0.8 }}
             className="text-xl font-bold text-secondaryTheme animate-balanco hover:animate-none active:animate-none"
           >
-            Até dia 31/05
+            Até dia 30/06
           </motion.h4>
         </div>
 
