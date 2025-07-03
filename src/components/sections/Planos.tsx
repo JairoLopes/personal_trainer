@@ -81,7 +81,7 @@ const Planos = () => {
             transition={{ duration: 0.8 }}
             className="text-xl font-bold text-secondaryTheme animate-balanco hover:animate-none active:animate-none"
           >
-            Até dia 30/06
+            Até dia 31/07
           </motion.h4>
         </div>
 
