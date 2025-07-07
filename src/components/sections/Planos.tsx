@@ -72,7 +72,7 @@ const Planos = () => {
             transition={{ duration: 0.8 }}
             className="gradient-text font-bold text-2xl lg:text-3xl animate-pulse"
           >
-            Promoção mês dos namorados
+            Planos promocionais
           </motion.h3>
 
           <motion.h4
