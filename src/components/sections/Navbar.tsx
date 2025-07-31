@@ -36,7 +36,7 @@ const NavBar = (props: navProps) => {
           <div
             id="burger-zip"
             /* Quando a tela for maior ou igual a 768px, essa div será oculta */
-            className="w-7 h-5 cursor-pointer z-40 md:hidden"
+            className="w-7 h-5 cursor-pointer z-40 lg:hidden"
             /* Quando esse container for clicado, setMenuOpen altera o valor de menuOpen para o valor oposto */
             onClick={() => props.setMenuOpen((prev) => !prev)}
           >
@@ -45,7 +45,7 @@ const NavBar = (props: navProps) => {
           </div>
 
           {/*CONTAINER DO MENU */}
-          <div className="hidden md:flex items-center space-x-8 font-extrabold">
+          <div className="hidden lg:flex items-center space-x-8 font-extrabold">
             <a
               href="#home"
               className="text-gray-300 hover:text-gray-300 hover:drop-shadow-lg transition-all relative group py-2"
@@ -58,6 +58,13 @@ const NavBar = (props: navProps) => {
               className="text-gray-300 hover:text-gray-300 hover:drop-shadow-lg transition-all relative group py-2"
             >
               Formação
+              <span className="absolute left-1/2 -bottom-0.5 w-0 h-0.5 bg-mainTheme group-hover:w-full transition-all duration-500 -translate-x-1/2"></span>
+            </a>
+            <a
+              href="#beneficios"
+              className="text-gray-300 hover:text-gray-300 hover:drop-shadow-lg transition-all relative group py-2"
+            >
+              Benefícios
               <span className="absolute left-1/2 -bottom-0.5 w-0 h-0.5 bg-mainTheme group-hover:w-full transition-all duration-500 -translate-x-1/2"></span>
             </a>
             <a
