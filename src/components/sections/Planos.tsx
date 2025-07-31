@@ -66,14 +66,16 @@ const Planos = () => {
 
         {/* Container de titulos de Promoções */}
         <div className="flex flex-col gap-4 text-center justify-center items-center mb-14">
-          <motion.h3
+          {/* 
+                    <motion.h3
             initial={slideUpFadeIn.initial}
             whileInView={slideUpFadeIn.animate}
             transition={{ duration: 0.8 }}
             className="gradient-text font-bold text-2xl lg:text-3xl animate-pulse"
           >
             Planos promocionais
-          </motion.h3>
+          </motion.h3>          
+          */}
 
           <motion.h4
             initial={slideUpFadeIn.initial}
@@ -81,7 +83,7 @@ const Planos = () => {
             transition={{ duration: 0.8 }}
             className="text-xl font-bold text-secondaryTheme animate-balanco hover:animate-none active:animate-none"
           >
-            Até dia 31/07
+            Planos Promocionais
           </motion.h4>
         </div>
 

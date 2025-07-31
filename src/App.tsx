@@ -4,6 +4,7 @@ import NavBar from "./components/sections/Navbar";
 import MobileMenu from "./components/sections/MobileMenu";
 import Home from "./components/sections/Home";
 import Formacao from "./components/sections/Formacao";
+import Beneficios from "./components/sections/Beneficios";
 import Planos from "./components/sections/Planos";
 import Resultados from "./components/sections/Resultados";
 import Conquistas from "./components/sections/Conquistas";
@@ -39,6 +40,9 @@ function App() {
 
         {/* FORMAÇÃO */}
         <Formacao />
+
+        {/* BENEFICIOS */}
+        <Beneficios />
 
         {/* PLANOS */}
         <Planos />
