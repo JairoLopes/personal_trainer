@@ -45,7 +45,7 @@ const Home = () => {
             className="text-sm px-3 sm:text-[18px] mt-2 max-w-[600px] lg:w-full lg:text-start"
           >
             <strong> Bacharel em Ed.Física </strong>, Atleta e Praticante de
-            musculação há mais de <strong>7 anos</strong>. Transformando a vida
+            musculação há mais de <strong>10 anos</strong>. Transformando a vida
             das pessoas.
           </motion.p>
 
