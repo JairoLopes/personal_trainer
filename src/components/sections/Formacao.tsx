@@ -20,8 +20,7 @@ const Formacao = () => {
       title: "Formação Acadêmica",
       items: [
         "Bacharel em Educação Física",
-        "Especialização em Fisiologia do Exercício",
-        "Certificação Internacional em Treinamento Funcional",
+        "Especialista em hipertrofia e emagrecimento",
       ],
     },
     {
