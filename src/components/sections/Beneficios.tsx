@@ -53,8 +53,7 @@ const Beneficios = () => {
     {
       icon: <Utensils className="w-6 h-6" />,
       title: "Dieta Personalizada",
-      description:
-        "Plano alimentar individualizado (valor adicional no plano).",
+      description: "Plano alimentar individualizado",
       category: "nutricao",
     },
     {
