@@ -2,14 +2,7 @@ import { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 import { slideRight, slideUpFadeIn } from "../../animations";
-import {
-  Users,
-  Heart,
-  Trophy,
-  Star,
-  ChevronLeft,
-  ChevronRight,
-} from "lucide-react";
+import { Heart, Star, ChevronLeft, ChevronRight } from "lucide-react";
 
 // Interface para as props das setas do slider
 interface ArrowProps {

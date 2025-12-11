@@ -5,9 +5,6 @@ import {
   ShoppingBag,
   Heart,
   Code,
-  MapPin,
-  Mail,
-  Phone,
   ExternalLink,
 } from "lucide-react";
 
