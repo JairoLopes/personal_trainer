@@ -84,6 +84,22 @@ const Planos = () => {
       whats:
         "https://wa.me/558198955665/?text=Tenho%20interesse%20em%20assinar%20o%20plano%20de%201%20Ano%20e%206%20meses",
     },
+    {
+      plano: "2 anos",
+      valor: 1600.0,
+      tipoPlano: "Plano promocional",
+      dieta: true,
+      popular: false,
+      beneficios: [
+        "Treino personalizado",
+        "Dieta inclusa",
+        "Suporte por WhatsApp",
+        "Atualização mensal",
+        "Economia de 56%",
+      ],
+      whats:
+        "https://wa.me/558198955665/?text=Tenho%20interesse%20em%20assinar%20o%20plano%20de%202%20anos",
+    },
   ];
 
   return (
