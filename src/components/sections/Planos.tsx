@@ -80,6 +80,7 @@ const Planos = () => {
         "Suporte por WhatsApp",
         "Atualização mensal",
         "Economia de 40%",
+        "+ 2 meses de consultoria grátis", // Adicionado aqui
       ],
       whats:
         "https://wa.me/558198955665/?text=Tenho%20interesse%20em%20assinar%20o%20plano%20de%201%20Ano%20e%206%20meses",
@@ -96,6 +97,7 @@ const Planos = () => {
         "Suporte por WhatsApp",
         "Atualização mensal",
         "Economia de 56%",
+        "+ 2 meses de consultoria grátis", // Adicionado aqui
       ],
       whats:
         "https://wa.me/558198955665/?text=Tenho%20interesse%20em%20assinar%20o%20plano%20de%202%20anos",
@@ -148,7 +150,7 @@ const Planos = () => {
               whileInView={slideUpFadeIn.animate}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               key={index}
-              className={`relative bg-gradient-to-b from-navBlack/90 to-deepBlue/90 rounded-2xl border ${
+              className={`flex flex-col relative bg-gradient-to-b from-navBlack/90 to-deepBlue/90 h-full rounded-2xl border ${
                 i.popular
                   ? "border-secondaryTheme/50 shadow-xl shadow-secondaryTheme/10"
                   : "border-white/10"
@@ -173,7 +175,7 @@ const Planos = () => {
               )}
 
               {/* Conteúdo do card */}
-              <div className="p-6 md:p-7">
+              <div className="flex flex-col p-6 md:p-7 grow">
                 {/* Cabeçalho do card */}
                 <div className="text-center mb-6">
                   <h2
@@ -206,14 +208,22 @@ const Planos = () => {
                 </div>
 
                 {/* Lista de benefícios */}
-                <div className="mb-8">
+                <div className="mb-8 grow p-2">
                   <h4 className="text-white/80 font-semibold mb-4 text-center text-sm">
                     INCLUI:
                   </h4>
+
+                  {/* ALTERAR AQUIIIIIIIIIIIIIIIIIIII */}
                   <ul className="space-y-3">
                     {i.beneficios.map((beneficio, idx) => (
                       <li key={idx} className="flex items-start gap-3">
-                        <CheckCircle className="w-5 h-5 text-secondaryTheme flex-shrink-0 mt-0.5" />
+                        <CheckCircle
+                          className={`w-5 h-5 ${
+                            beneficio.includes("+ 2 meses")
+                              ? "text-emerald-400"
+                              : "text-secondaryTheme"
+                          } flex-shrink-0 mt-0.5`}
+                        />
                         <span className="text-white/70 text-sm">
                           {beneficio}
                         </span>
